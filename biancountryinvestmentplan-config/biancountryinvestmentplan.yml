@@ -1,0 +1,31 @@
+spring: 
+  api: 
+    investmentportfolioplanning: 
+      context-path: /SelectScheme/Scheme
+      hosturl: /v1/bian-3/core/wealth/investmentplan/10.0.0/
+      jolt-filename: InvestmentPortfolioPlanning620501-jolt.json
+    investmenttype: 
+      context-path: /InvestmentType/Evaluate
+      hosturl: /v1/bian-3/core/wealth/investmentplan/10.0.0/
+      jolt-filename: InvestmentType907837-jolt.json
+    nomineeregistration: 
+      context-path: /NomineeRegistration/Evaluate
+      hosturl: /v1/bian-3/core/wealth/investmentplan/10.0.0/
+      jolt-filename: NomineeRegistration545180-jolt.json
+    notificationservice: 
+      context-path: /NotificationService/Evaluate
+      hosturl: /v1/bian-3/core/wealth/investmentplan/10.0.0/
+      jolt-filename: NotificationService786108-jolt.json
+    productcatalogue: 
+      context-path: /ProductCatalogue/Products
+      hosturl: /v1/bian-3/core/wealth/investmentplan/10.0.0/
+      jolt-filename: ProductCatalogue241146-jolt.json
+    regulatorycompliance: 
+      context-path: /RegulatoryCompliance/Evaluate
+      hosturl: /v1/bian-3/core/wealth/investmentplan/10.0.0/
+      jolt-filename: RegulatoryCompliance998786-jolt.json
+  datasource: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: ${mysql_pwd}
+    url: jdbc:mysql://${mysql_url}:3306/camunda
+    username: ${mysql_user}
